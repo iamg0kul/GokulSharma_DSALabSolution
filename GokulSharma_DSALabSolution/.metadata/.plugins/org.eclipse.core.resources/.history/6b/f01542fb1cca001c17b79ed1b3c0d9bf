@@ -1,0 +1,13 @@
+package com.greatlearning.entrypoint;
+import com.greatlearning.balancingcheck.*;
+public class Main {
+	public static void main(String[] args) {
+		String expr = "( [ [ { } ] ] )";
+
+		BalancedBrackets obj1=new BalancedBrackets();
+		if (obj1.areBracketsBalanced(expr))
+			System.out.println("Balanced ");
+		else
+			System.out.println("Not Balanced ");
+	}
+}
